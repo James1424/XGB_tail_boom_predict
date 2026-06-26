@@ -1,0 +1,120 @@
+name: Build Panel and Train Tail Boom Model
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_tickers:
+        description: "Optional debug cap after ETF universe is built. 0 means all."
+        required: false
+        default: "0"
+      chunk_size:
+        description: "yfinance batch size"
+        required: false
+        default: "80"
+      sleep_seconds:
+        description: "sleep between yfinance batches"
+        required: false
+        default: "1.0"
+      rounds:
+        description: "Number of repeated random-seed rounds for the 100-rounds report"
+        required: false
+        default: "100"
+      skip_ablation:
+        description: "Set true for a quick smoke run"
+        required: false
+        default: "false"
+  schedule:
+    - cron: "0 7 * * 0"
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  build-and-train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build ETF/index holdings universe
+        run: python -m src.get_holdings_universe
+
+      - name: Download daily prices
+        run: |
+          python -m src.download_data \
+            --max-tickers "${{ github.event.inputs.max_tickers || '0' }}" \
+            --chunk-size "${{ github.event.inputs.chunk_size || '80' }}" \
+            --sleep "${{ github.event.inputs.sleep_seconds || '1.0' }}"
+
+      - name: Build monthly panel
+        run: python -m src.build_panel
+
+      - name: Train right-tail boom model
+        run: |
+          SKIP=""
+          if [ "${{ github.event.inputs.skip_ablation || 'false' }}" = "true" ]; then
+            SKIP="--skip-ablation"
+          fi
+          python -m src.train_model --rounds "${{ github.event.inputs.rounds || '100' }}" $SKIP
+
+      - name: Update README
+        run: python -m src.update_model_readme
+
+      - name: Upload full panel artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-panel-files
+          path: |
+            outputs/raw_monthly_panel.csv
+            outputs/clean_monthly_panel.csv
+            data/daily_prices.csv.gz
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Upload full prediction artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-prediction-files
+          path: |
+            outputs/full_predictions.csv
+            outputs/monthly_top_predictions.csv
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Commit updated reports and model
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Build panel and update tail boom model reports"
+          file_pattern: >
+            README.md
+            data/seed_universe.csv
+            data/seed_universe_sources_long.csv
+            data/holding_source_failures.csv
+            data/download_failures.csv
+            outputs/panel_summary.csv
+            outputs/label_summary.csv
+            outputs/label_distribution_by_month.csv
+            outputs/feature_missing_report.csv
+            outputs/dropped_features.csv
+            outputs/latest_panel_sample.csv
+            outputs/model_design_panel_sample.csv
+            outputs/panel_head_20000.csv
+            outputs/feature_manifest.txt
+            outputs/reference_downweighted_main_model_result.csv
+            outputs/latest_live_boom_candidates.csv
+            outputs/strategy_baseline_comparison.csv
+            outputs/ablation_ranked_summary.csv
+            outputs/rounds_100_report.csv
+            outputs/rounds_100_latest_candidate_frequency.csv
+            outputs/five_seed_training_stability.csv
+            outputs/feature_importance.csv
+            outputs/model_metrics.json
+            models/xgb_tail_event_classifier.json
+            models/selected_features.txt
