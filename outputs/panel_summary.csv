@@ -1,13 +1,13 @@
 metric,value
-raw_rows,42452
-clean_rows,42452
+raw_rows,51815
+clean_rows,51815
 raw_columns,137
 clean_columns,126
-raw_tickers,344
-clean_tickers,344
-months,126
+raw_tickers,424
+clean_tickers,424
+months,127
 first_month,2016-01-31 00:00:00
-last_month,2026-06-30 00:00:00
+last_month,2026-07-31 00:00:00
 candidate_features,110
 kept_features,110
 dropped_features,0

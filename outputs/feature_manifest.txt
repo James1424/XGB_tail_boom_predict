@@ -3,22 +3,20 @@
 This file lists model input features kept after missingness filtering.
 Future-return and tail-label columns are targets/evaluation fields and must not be used as model input features.
 
-Rows: 42,452
+Rows: 51,815
 Columns: 126
-Tickers: 344
-Months: 126
+Tickers: 424
+Months: 127
 Kept features: 110
 Dropped features: 0
 
 ## Kept model features
-- up_day_volume_ratio_3m [volume_flow]
-- up_day_dollar_volume_ratio_3m [volume_flow]
 - rel_mom_12m_vs_qqq [relative_strength]
 - mom_12m [other_momentum]
+- up_day_volume_ratio_3m [volume_flow]
+- up_day_dollar_volume_ratio_3m [volume_flow]
 - mom_9m [other_momentum]
 - mom_7m [other_momentum]
-- volume_change_3m [volume_flow]
-- dollar_volume_change_3m [volume_flow]
 - mom_6m [core_momentum]
 - mom_4m_vs_6m [core_momentum]
 - mom_5m_vs_6m [core_momentum]
@@ -36,9 +34,9 @@ Dropped features: 0
 - ret_lag_5m [sequence_path]
 - volume_ma3_to_12m [volume_flow]
 - price_ma100_ratio [trend]
+- volume_change_3m [volume_flow]
+- dollar_volume_change_3m [volume_flow]
 - drawdown_change_3m [drawdown_recovery]
-- volume_change_1m [volume_flow]
-- dollar_volume_change_1m [volume_flow]
 - mom_4m [core_momentum]
 - core_mom_456_avg [core_momentum]
 - core_mom_456_min [core_momentum]
@@ -63,27 +61,29 @@ Dropped features: 0
 - up_big_move_freq_6m [volatility_amplitude_frequency]
 - down_big_move_freq_6m [volatility_amplitude_frequency]
 - intraday_range_mean_6m [volatility_amplitude_frequency]
+- volume_change_1m [volume_flow]
+- dollar_volume_change_1m [volume_flow]
 - drawdown_change_1m [drawdown_recovery]
 - ma30_slope_1m [trend]
-- volume_ma1_to_6m [volume_flow]
 - price_ma50_ratio [trend]
 - atr_14_to_100d [vol_structure]
-- volume_ratio_3m [volume_flow]
+- volume_ma1_to_6m [volume_flow]
 - ret_lag_2m [sequence_path]
 - ret_lag_6m_std [sequence_path]
 - mom_2m [other_momentum]
 - ma20_slope_1m [trend]
+- volatility_3m [risk_drawdown]
+- volatility_1m_to_3m [vol_structure]
+- volume_ratio_3m [volume_flow]
+- avg_abs_daily_return_3m [volatility_amplitude_frequency]
 - ma10_slope_1m [trend]
 - drawdown_3m [risk_drawdown]
 - drawdown_3m_abs [risk_drawdown]
-- volatility_3m [risk_drawdown]
-- volatility_1m_to_3m [vol_structure]
 - recovery_from_3m_low [drawdown_recovery]
 - days_since_3m_high_norm [drawdown_recovery]
 - days_since_3m_low_norm [drawdown_recovery]
 - avg_dollar_volume_3m [liquidity_size_proxy]
 - log_avg_dollar_volume_3m [liquidity_size_proxy]
-- avg_abs_daily_return_3m [volatility_amplitude_frequency]
 - large_move_freq_3m [volatility_amplitude_frequency]
 - up_big_move_freq_3m [volatility_amplitude_frequency]
 - down_big_move_freq_3m [volatility_amplitude_frequency]

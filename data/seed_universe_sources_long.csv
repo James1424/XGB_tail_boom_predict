@@ -370,7 +370,6 @@ COIN,SPY,large_cap_core,3.0,wikipedia_sp500
 CL,SPY,large_cap_core,3.0,wikipedia_sp500
 CMCSA,SPY,large_cap_core,3.0,wikipedia_sp500
 FIX,SPY,large_cap_core,3.0,wikipedia_sp500
-CAG,SPY,large_cap_core,3.0,wikipedia_sp500
 COP,SPY,large_cap_core,3.0,wikipedia_sp500
 ED,SPY,large_cap_core,3.0,wikipedia_sp500
 STZ,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -485,6 +484,7 @@ HSY,SPY,large_cap_core,3.0,wikipedia_sp500
 HPE,SPY,large_cap_core,3.0,wikipedia_sp500
 HLT,SPY,large_cap_core,3.0,wikipedia_sp500
 HD,SPY,large_cap_core,3.0,wikipedia_sp500
+HONA,SPY,large_cap_core,3.0,wikipedia_sp500
 HON,SPY,large_cap_core,3.0,wikipedia_sp500
 HRL,SPY,large_cap_core,3.0,wikipedia_sp500
 HST,SPY,large_cap_core,3.0,wikipedia_sp500
