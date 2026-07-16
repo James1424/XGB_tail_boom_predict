@@ -68,6 +68,7 @@ jobs:
         run: python -m src.update_model_readme
 
       - name: Upload full panel artifacts
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: full-panel-files
@@ -76,9 +77,11 @@ jobs:
             outputs/clean_monthly_panel.csv
             data/daily_prices.csv.gz
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 3
+          compression-level: 9
 
       - name: Upload full prediction artifacts
+        continue-on-error: true
         uses: actions/upload-artifact@v4
         with:
           name: full-prediction-files
@@ -86,7 +89,8 @@ jobs:
             outputs/full_predictions.csv
             outputs/monthly_top_predictions.csv
           if-no-files-found: warn
-          retention-days: 14
+          retention-days: 3
+          compression-level: 9
 
       - name: Commit updated reports and model
         uses: stefanzweifel/git-auto-commit-action@v5
