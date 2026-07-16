@@ -3,11 +3,11 @@
 This file lists model input features kept after missingness filtering.
 Future-return and tail-label columns are targets/evaluation fields and must not be used as model input features.
 
-Rows: 51,815
-Columns: 126
-Tickers: 424
+Rows: 64,506
+Columns: 125
+Tickers: 531
 Months: 127
-Kept features: 110
+Kept features: 109
 Dropped features: 0
 
 ## Kept model features
@@ -29,13 +29,13 @@ Dropped features: 0
 - drawdown_12m [risk_drawdown]
 - drawdown_12m_abs [risk_drawdown]
 - ma100_slope_1m [trend]
+- volume_ma3_to_12m [volume_flow]
+- volume_change_3m [volume_flow]
+- dollar_volume_change_3m [volume_flow]
 - mom_5m [core_momentum]
 - core_mom_456_std [core_momentum]
 - ret_lag_5m [sequence_path]
-- volume_ma3_to_12m [volume_flow]
 - price_ma100_ratio [trend]
-- volume_change_3m [volume_flow]
-- dollar_volume_change_3m [volume_flow]
 - drawdown_change_3m [drawdown_recovery]
 - mom_4m [core_momentum]
 - core_mom_456_avg [core_momentum]
@@ -47,10 +47,12 @@ Dropped features: 0
 - ret_lag_3m [sequence_path]
 - rel_mom_3m_vs_qqq [relative_strength]
 - mom_3m [other_momentum]
-- volatility_6m [risk_drawdown]
 - return_vol_ratio_3m [risk_drawdown]
+- volatility_6m [risk_drawdown]
 - volatility_1m_to_6m [vol_structure]
 - volatility_3m_to_6m [vol_structure]
+- volume_change_1m [volume_flow]
+- dollar_volume_change_1m [volume_flow]
 - avg_abs_daily_return_6m [volatility_amplitude_frequency]
 - drawdown_6m [risk_drawdown]
 - drawdown_6m_abs [risk_drawdown]
@@ -61,20 +63,18 @@ Dropped features: 0
 - up_big_move_freq_6m [volatility_amplitude_frequency]
 - down_big_move_freq_6m [volatility_amplitude_frequency]
 - intraday_range_mean_6m [volatility_amplitude_frequency]
-- volume_change_1m [volume_flow]
-- dollar_volume_change_1m [volume_flow]
+- volume_ma1_to_6m [volume_flow]
 - drawdown_change_1m [drawdown_recovery]
 - ma30_slope_1m [trend]
 - price_ma50_ratio [trend]
 - atr_14_to_100d [vol_structure]
-- volume_ma1_to_6m [volume_flow]
 - ret_lag_2m [sequence_path]
 - ret_lag_6m_std [sequence_path]
 - mom_2m [other_momentum]
 - ma20_slope_1m [trend]
+- volume_ratio_3m [volume_flow]
 - volatility_3m [risk_drawdown]
 - volatility_1m_to_3m [vol_structure]
-- volume_ratio_3m [volume_flow]
 - avg_abs_daily_return_3m [volatility_amplitude_frequency]
 - ma10_slope_1m [trend]
 - drawdown_3m [risk_drawdown]
@@ -115,7 +115,6 @@ Dropped features: 0
 - source_count [etf_source]
 - source_weight_sum [etf_source]
 - theme_count [etf_source]
-- in_core_growth [etf_source]
 - in_large_cap_core [etf_source]
 - in_manual_core [etf_source]
 - trading_day_count_3m [liquidity_size_proxy]
