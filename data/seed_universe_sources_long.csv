@@ -166,7 +166,6 @@ ECHO,SPY,large_cap_core,3.0,wikipedia_sp500
 ECL,SPY,large_cap_core,3.0,wikipedia_sp500
 EIX,SPY,large_cap_core,3.0,wikipedia_sp500
 EW,SPY,large_cap_core,3.0,wikipedia_sp500
-EA,SPY,large_cap_core,3.0,wikipedia_sp500
 ELV,SPY,large_cap_core,3.0,wikipedia_sp500
 EME,SPY,large_cap_core,3.0,wikipedia_sp500
 EMR,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -195,6 +194,7 @@ FAST,SPY,large_cap_core,3.0,wikipedia_sp500
 FRT,SPY,large_cap_core,3.0,wikipedia_sp500
 FDX,SPY,large_cap_core,3.0,wikipedia_sp500
 FDXF,SPY,large_cap_core,3.0,wikipedia_sp500
+FERG,SPY,large_cap_core,3.0,wikipedia_sp500
 FIS,SPY,large_cap_core,3.0,wikipedia_sp500
 FITB,SPY,large_cap_core,3.0,wikipedia_sp500
 FSLR,SPY,large_cap_core,3.0,wikipedia_sp500
