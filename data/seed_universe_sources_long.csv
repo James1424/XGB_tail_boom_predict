@@ -52,7 +52,6 @@ ATO,SPY,large_cap_core,3.0,wikipedia_sp500
 ADSK,SPY,large_cap_core,3.0,wikipedia_sp500
 ADP,SPY,large_cap_core,3.0,wikipedia_sp500
 AZO,SPY,large_cap_core,3.0,wikipedia_sp500
-AVB,SPY,large_cap_core,3.0,wikipedia_sp500
 AVY,SPY,large_cap_core,3.0,wikipedia_sp500
 AXON,SPY,large_cap_core,3.0,wikipedia_sp500
 BKR,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -174,7 +173,6 @@ EOG,SPY,large_cap_core,3.0,wikipedia_sp500
 EQT,SPY,large_cap_core,3.0,wikipedia_sp500
 EFX,SPY,large_cap_core,3.0,wikipedia_sp500
 EQIX,SPY,large_cap_core,3.0,wikipedia_sp500
-EQR,SPY,large_cap_core,3.0,wikipedia_sp500
 ERIE,SPY,large_cap_core,3.0,wikipedia_sp500
 ESS,SPY,large_cap_core,3.0,wikipedia_sp500
 EL,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -387,6 +385,7 @@ DGX,SPY,large_cap_core,3.0,wikipedia_sp500
 Q,SPY,large_cap_core,3.0,wikipedia_sp500
 RL,SPY,large_cap_core,3.0,wikipedia_sp500
 RJF,SPY,large_cap_core,3.0,wikipedia_sp500
+RDDT,SPY,large_cap_core,3.0,wikipedia_sp500
 RTX,SPY,large_cap_core,3.0,wikipedia_sp500
 O,SPY,large_cap_core,3.0,wikipedia_sp500
 REG,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -476,6 +475,7 @@ VTRS,SPY,large_cap_core,3.0,wikipedia_sp500
 VICI,SPY,large_cap_core,3.0,wikipedia_sp500
 V,SPY,large_cap_core,3.0,wikipedia_sp500
 VST,SPY,large_cap_core,3.0,wikipedia_sp500
+VMRK,SPY,large_cap_core,3.0,wikipedia_sp500
 VMC,SPY,large_cap_core,3.0,wikipedia_sp500
 WRB,SPY,large_cap_core,3.0,wikipedia_sp500
 GWW,SPY,large_cap_core,3.0,wikipedia_sp500
