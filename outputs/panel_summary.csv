@@ -1,10 +1,10 @@
 metric,value
-raw_rows,56213
-clean_rows,56213
+raw_rows,64939
+clean_rows,64939
 raw_columns,136
 clean_columns,125
-raw_tickers,451
-clean_tickers,451
+raw_tickers,531
+clean_tickers,531
 months,128
 first_month,2016-01-31 00:00:00
 last_month,2026-08-31 00:00:00
