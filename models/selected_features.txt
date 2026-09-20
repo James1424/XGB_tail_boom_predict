@@ -36,8 +36,8 @@ mom_6m_last3m
 ret_lag_3m
 rel_mom_3m_vs_qqq
 mom_3m
-volatility_6m
 return_vol_ratio_3m
+volatility_6m
 volatility_1m_to_6m
 volatility_3m_to_6m
 avg_abs_daily_return_6m
