@@ -66,6 +66,7 @@ BIIB,SPY,large_cap_core,3.0,wikipedia_sp500
 BLK,SPY,large_cap_core,3.0,wikipedia_sp500
 BX,SPY,large_cap_core,3.0,wikipedia_sp500
 XYZ,SPY,large_cap_core,3.0,wikipedia_sp500
+BE,SPY,large_cap_core,3.0,wikipedia_sp500
 BNY,SPY,large_cap_core,3.0,wikipedia_sp500
 BA,SPY,large_cap_core,3.0,wikipedia_sp500
 BKNG,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -75,7 +76,6 @@ AVGO,SPY,large_cap_core,3.0,wikipedia_sp500
 BR,SPY,large_cap_core,3.0,wikipedia_sp500
 BRO,SPY,large_cap_core,3.0,wikipedia_sp500
 BF-B,SPY,large_cap_core,3.0,wikipedia_sp500
-BLDR,SPY,large_cap_core,3.0,wikipedia_sp500
 BG,SPY,large_cap_core,3.0,wikipedia_sp500
 BXP,SPY,large_cap_core,3.0,wikipedia_sp500
 CHRW,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -178,6 +178,7 @@ ESS,SPY,large_cap_core,3.0,wikipedia_sp500
 EL,SPY,large_cap_core,3.0,wikipedia_sp500
 EG,SPY,large_cap_core,3.0,wikipedia_sp500
 EVRG,SPY,large_cap_core,3.0,wikipedia_sp500
+P,SPY,large_cap_core,3.0,wikipedia_sp500
 ES,SPY,large_cap_core,3.0,wikipedia_sp500
 EXC,SPY,large_cap_core,3.0,wikipedia_sp500
 EXE,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -246,6 +247,7 @@ IBM,SPY,large_cap_core,3.0,wikipedia_sp500
 IEX,SPY,large_cap_core,3.0,wikipedia_sp500
 IDXX,SPY,large_cap_core,3.0,wikipedia_sp500
 ITW,SPY,large_cap_core,3.0,wikipedia_sp500
+ILMN,SPY,large_cap_core,3.0,wikipedia_sp500
 INCY,SPY,large_cap_core,3.0,wikipedia_sp500
 IR,SPY,large_cap_core,3.0,wikipedia_sp500
 PODD,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -316,7 +318,6 @@ MU,SPY,large_cap_core,3.0,wikipedia_sp500
 MSFT,SPY,large_cap_core,3.0,wikipedia_sp500
 MAA,SPY,large_cap_core,3.0,wikipedia_sp500
 MRNA,SPY,large_cap_core,3.0,wikipedia_sp500
-TAP,SPY,large_cap_core,3.0,wikipedia_sp500
 MDLZ,SPY,large_cap_core,3.0,wikipedia_sp500
 MPWR,SPY,large_cap_core,3.0,wikipedia_sp500
 MNST,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -443,7 +444,6 @@ TXT,SPY,large_cap_core,3.0,wikipedia_sp500
 TMO,SPY,large_cap_core,3.0,wikipedia_sp500
 TJX,SPY,large_cap_core,3.0,wikipedia_sp500
 TKO,SPY,large_cap_core,3.0,wikipedia_sp500
-TTD,SPY,large_cap_core,3.0,wikipedia_sp500
 TSCO,SPY,large_cap_core,3.0,wikipedia_sp500
 TT,SPY,large_cap_core,3.0,wikipedia_sp500
 TDG,SPY,large_cap_core,3.0,wikipedia_sp500
