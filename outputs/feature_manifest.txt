@@ -3,10 +3,10 @@
 This file lists model input features kept after missingness filtering.
 Future-return and tail-label columns are targets/evaluation fields and must not be used as model input features.
 
-Rows: 65,349
+Rows: 65,879
 Columns: 125
 Tickers: 530
-Months: 129
+Months: 130
 Kept features: 109
 Dropped features: 0
 
