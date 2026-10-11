@@ -127,7 +127,6 @@ COO,SPY,large_cap_core,3.0,wikipedia_sp500
 CPRT,SPY,large_cap_core,3.0,wikipedia_sp500
 GLW,SPY,large_cap_core,3.0,wikipedia_sp500
 CPAY,SPY,large_cap_core,3.0,wikipedia_sp500
-CTVA,SPY,large_cap_core,3.0,wikipedia_sp500
 CSGP,SPY,large_cap_core,3.0,wikipedia_sp500
 COST,SPY,large_cap_core,3.0,wikipedia_sp500
 CRH,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -357,7 +356,6 @@ PCAR,SPY,large_cap_core,3.0,wikipedia_sp500
 PKG,SPY,large_cap_core,3.0,wikipedia_sp500
 PLTR,SPY,large_cap_core,3.0,wikipedia_sp500
 PANW,SPY,large_cap_core,3.0,wikipedia_sp500
-PSKY,SPY,large_cap_core,3.0,wikipedia_sp500
 PH,SPY,large_cap_core,3.0,wikipedia_sp500
 PAYX,SPY,large_cap_core,3.0,wikipedia_sp500
 PYPL,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -411,6 +409,7 @@ SRE,SPY,large_cap_core,3.0,wikipedia_sp500
 NOW,SPY,large_cap_core,3.0,wikipedia_sp500
 SHW,SPY,large_cap_core,3.0,wikipedia_sp500
 SPG,SPY,large_cap_core,3.0,wikipedia_sp500
+SKYD,SPY,large_cap_core,3.0,wikipedia_sp500
 SWKS,SPY,large_cap_core,3.0,wikipedia_sp500
 SJM,SPY,large_cap_core,3.0,wikipedia_sp500
 SW,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -450,6 +449,7 @@ TDG,SPY,large_cap_core,3.0,wikipedia_sp500
 TRV,SPY,large_cap_core,3.0,wikipedia_sp500
 TRMB,SPY,large_cap_core,3.0,wikipedia_sp500
 TFC,SPY,large_cap_core,3.0,wikipedia_sp500
+TWLO,SPY,large_cap_core,3.0,wikipedia_sp500
 TYL,SPY,large_cap_core,3.0,wikipedia_sp500
 TSN,SPY,large_cap_core,3.0,wikipedia_sp500
 USB,SPY,large_cap_core,3.0,wikipedia_sp500
@@ -477,12 +477,12 @@ V,SPY,large_cap_core,3.0,wikipedia_sp500
 VST,SPY,large_cap_core,3.0,wikipedia_sp500
 VMRK,SPY,large_cap_core,3.0,wikipedia_sp500
 VMC,SPY,large_cap_core,3.0,wikipedia_sp500
+VYLR,SPY,large_cap_core,3.0,wikipedia_sp500
 WRB,SPY,large_cap_core,3.0,wikipedia_sp500
 GWW,SPY,large_cap_core,3.0,wikipedia_sp500
 WAB,SPY,large_cap_core,3.0,wikipedia_sp500
 WMT,SPY,large_cap_core,3.0,wikipedia_sp500
 DIS,SPY,large_cap_core,3.0,wikipedia_sp500
-WBD,SPY,large_cap_core,3.0,wikipedia_sp500
 WM,SPY,large_cap_core,3.0,wikipedia_sp500
 WAT,SPY,large_cap_core,3.0,wikipedia_sp500
 WEC,SPY,large_cap_core,3.0,wikipedia_sp500

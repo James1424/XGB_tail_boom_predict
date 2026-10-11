@@ -1,6 +1,6 @@
 metric,value
-raw_rows,65879
-clean_rows,65879
+raw_rows,65785
+clean_rows,65785
 raw_columns,136
 clean_columns,125
 raw_tickers,530
