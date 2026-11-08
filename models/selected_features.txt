@@ -12,9 +12,9 @@ mom_6m_acceleration
 ret_lag_6m
 rel_mom_6m_vs_qqq
 mom_3m_vs_6m
-return_vol_ratio_6m
 drawdown_12m
 drawdown_12m_abs
+return_vol_ratio_6m
 ma100_slope_1m
 volume_change_3m
 dollar_volume_change_3m
